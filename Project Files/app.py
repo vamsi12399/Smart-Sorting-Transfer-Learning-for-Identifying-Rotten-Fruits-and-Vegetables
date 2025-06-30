@@ -6,12 +6,10 @@ import os
 
 app = Flask(__name__)
 model = load_model('model/smart_sorting_model.h5')
-class_names = ['Apple___Fresh','Apple___Rotten','Banana___Fresh','Banana___Rotten','Beetroot___Fresh','Beetroot___Rotten',
-               'Bell Pepper___Fresh','Bell Pepper___Rotten','Cabbage___Fresh','Cabbage___Rotten','Carrot___Fresh',
-               'Carrot___Rotten','Cauliflower___Fresh','Cauliflower___Rotten','Cucumber___Fresh','Cucumber___Rotten',
-               'Garlic___Fresh','Garlic___Rotten','Ginger___Fresh','Ginger___Rotten','Grapes___Fresh','Grapes___Rotten',
-               'Mango___Fresh','Mango___Rotten','Onion___Fresh','Onion___Rotten','Orange___Fresh','Orange___Rotten',
-               'Potato___Fresh','Potato___Rotten','Tomato___Fresh','Tomato___Rotten']
+class_names = ['Apple___Fresh','Apple___Rotten','Banana___Fresh','Banana___Rotten','Bell Pepper___Fresh','Bell Pepper___Rotten',
+               'Carrot___Fresh','Carrot___Rotten','Cucumber___Fresh','Cucumber___Rotten','Grapes___Fresh','Grapes___Rotten',
+               'Guava__Fresh','Guava__Rotten','Jujube__Fresh','Jujube__Rotten','Mango___Fresh','Mango___Rotten','Orange___Fresh','Orange___Rotten',
+               'Pomegranate__Fresh','Pomegranate__Rotten','Potato___Fresh','Potato___Rotten','Strawberry__Fresh','Strawberry__Rotten','Tomato___Fresh','Tomato___Rotten']
 
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
